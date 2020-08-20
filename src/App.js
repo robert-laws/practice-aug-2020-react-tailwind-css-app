@@ -4,9 +4,32 @@ import Button from './components/Button';
 import NavBar from './components/NavBar';
 
 function App() {
+  const linkList = [
+    {
+      text: 'Home',
+      url: 'http://localhost:3000',
+    },
+    {
+      text: 'News',
+      url: 'http://localhost:3000/news',
+    },
+    {
+      text: 'About Us',
+      url: 'http://localhost:3000/about',
+    },
+    {
+      text: 'Helpful Info',
+      url: 'http://localhost:3000/info',
+    },
+    {
+      text: 'Contact Our Team',
+      url: 'http://localhost:3000/contact',
+    },
+  ];
+
   return (
     <main>
-      <NavBar />
+      <NavBar links={linkList} />
       <div className='bg-blue-700 container p-4'>
         <div className='max-w-sm rounded overflow-hidden shadow-lg bg-white'>
           <img className='w-full' src={profileImg} alt='Display' />
