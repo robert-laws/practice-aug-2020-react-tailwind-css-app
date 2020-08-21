@@ -4,6 +4,7 @@ const NavBar = ({ links }) => {
   const linkList = links.map((link) => {
     return (
       <a
+        key={link.text}
         href={link.url}
         className='block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white mr-4'
       >
