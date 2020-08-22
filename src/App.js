@@ -3,8 +3,8 @@ import React from 'react';
 
 function App() {
   return (
-    <div className='font-body'>
-      <div>
+    <div className='font-body grid md:grid-cols-3'>
+      <div className='md:col-span-1'>
         <nav>
           <div>
             <h1 className='font-bold uppercase p-4 border-b border-gray-100'>
@@ -32,7 +32,7 @@ function App() {
       </div>
       {/* end nav */}
 
-      <main className='px-16 py-6 bg-gray-100'>
+      <main className='px-16 py-6 bg-gray-100 md:col-span-2'>
         <div className='flex justify-center md:justify-end'>
           <a href='#login' className='text-primary'>
             Login
@@ -51,9 +51,9 @@ function App() {
           <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>
             Latest Recipes
           </h4>
-          <div className='mt-8'>
+          <div className='mt-8 grid lg:grid-cols-3 lg:gap-8'>
             {/* cards go here */}
-            <div className='bg-white rounded-lg overflow-hidden shadow-md relative'>
+            <div className='card mb-4 lg:mb-0'>
               <img
                 src='img/fish.png'
                 alt='fish'
@@ -65,7 +65,39 @@ function App() {
                   Recipe by Mario
                 </span>
               </div>
-              <div className='bg-secondary-100 text-secondary-200 text-xs font-bold rounded-full p-2 absolute top-0 ml-2 mt-2'>
+              <div className='badge'>
+                <span>40 mins</span>
+              </div>
+            </div>
+            <div className='card mb-4 lg:mb-0'>
+              <img
+                src='img/sandwich.png'
+                alt='sandwich'
+                className='w-full h-40 sm:h-56 object-cover'
+              />
+              <div className='m-4'>
+                <span className='font-bold'>Club Sandwich</span>
+                <span className='block text-gray-500 text-sm'>
+                  Recipe by Kalvin
+                </span>
+              </div>
+              <div className='badge'>
+                <span>15 mins</span>
+              </div>
+            </div>
+            <div className='card'>
+              <img
+                src='img/soup.png'
+                alt='soup'
+                className='w-full h-40 sm:h-56 object-cover'
+              />
+              <div className='m-4'>
+                <span className='font-bold'>Chicken Soup</span>
+                <span className='block text-gray-500 text-sm'>
+                  Recipe by James
+                </span>
+              </div>
+              <div className='badge'>
                 <span>25 mins</span>
               </div>
             </div>
