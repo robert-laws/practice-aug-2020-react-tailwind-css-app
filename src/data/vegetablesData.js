@@ -1,10 +1,12 @@
 export const vegetablesData = [
   {
     name: 'Celery',
-    img: 'apple.png',
+    img: 'celery.png',
+    tags: ['Vegetable', 'Crunchy'],
   },
   {
     name: 'Broccoli',
-    img: 'avocado.png',
+    img: 'broccoli.png',
+    tags: ['Vegetable', 'Vitamins'],
   },
 ];
