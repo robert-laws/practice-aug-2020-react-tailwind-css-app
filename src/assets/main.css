@@ -19106,29 +19106,17 @@ video {
   animation: bounce 1s infinite;
 }
 
-.btn {
-  font-weight: 700;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 0.25rem;
+/* .btn {
+  @apply font-bold py-2 px-4 rounded;
 }
 
 .btn-blue {
-  --bg-opacity: 1;
-  background-color: #4299e1;
-  background-color: rgba(66, 153, 225, var(--bg-opacity));
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
+  @apply bg-blue-500 text-white;
 }
 
 .btn-blue:hover {
-  --bg-opacity: 1;
-  background-color: #2c5282;
-  background-color: rgba(44, 82, 130, var(--bg-opacity));
-}
+  @apply bg-blue-800;
+} */
 
 .card {
   --bg-opacity: 1;
@@ -19155,6 +19143,19 @@ video {
   top: 0;
   margin-left: 0.5rem;
   margin-top: 0.5rem;
+}
+
+.btn {
+  border-radius: 9999px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: 640px){
