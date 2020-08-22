@@ -32,8 +32,8 @@ function App() {
       </div>
       {/* end nav */}
 
-      <main className='px-16 py-6'>
-        <div className='flex justify-end'>
+      <main className='px-16 py-6 bg-gray-100'>
+        <div className='flex justify-center md:justify-end'>
           <a href='#login' className='text-primary'>
             Login
           </a>
@@ -53,11 +53,20 @@ function App() {
           </h4>
           <div className='mt-8'>
             {/* cards go here */}
-            <div>
-              <img src='img/fish.png' alt='fish' />
-              <div>
-                <span>Grilled Salmon</span>
-                <span>Recipe by Mario</span>
+            <div className='bg-white rounded-lg overflow-hidden shadow-md relative'>
+              <img
+                src='img/fish.png'
+                alt='fish'
+                className='w-full h-40 sm:h-56 object-cover'
+              />
+              <div className='m-4'>
+                <span className='font-bold'>Grilled Salmon</span>
+                <span className='block text-gray-500 text-sm'>
+                  Recipe by Mario
+                </span>
+              </div>
+              <div className='bg-secondary-100 text-secondary-200 text-xs font-bold rounded-full p-2 absolute top-0 ml-2 mt-2'>
+                <span>25 mins</span>
               </div>
             </div>
           </div>
