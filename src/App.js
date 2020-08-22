@@ -7,7 +7,7 @@ function App() {
       <div>
         <nav>
           <div>
-            <h1 className='font-bold uppercase'>
+            <h1 className='font-bold uppercase p-4 border-b border-gray-100'>
               <a href='/'>Food Ninja</a>
             </h1>
           </div>
@@ -32,10 +32,14 @@ function App() {
       </div>
       {/* end nav */}
 
-      <main>
+      <main className='px-16 py-6'>
         <div>
-          <a href='#login'>Login</a>
-          <a href='#sign-up'>Sign Up</a>
+          <a href='#login' className='text-primary'>
+            Login
+          </a>
+          <a href='#sign-up' className='text-primary'>
+            Sign Up
+          </a>
         </div>
 
         <header>
@@ -44,8 +48,10 @@ function App() {
         </header>
 
         <div>
-          <h4 className='font-bold'>Latest Recipes</h4>
-          <div>
+          <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>
+            Latest Recipes
+          </h4>
+          <div className='mt-8'>
             {/* cards go here */}
             <div>
               <img src='img/fish.png' alt='fish' />
@@ -56,12 +62,14 @@ function App() {
             </div>
           </div>
 
-          <h4 className='font-bold'>Most Popular</h4>
+          <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>
+            Most Popular
+          </h4>
 
-          <div>{/* cards go here */}</div>
+          <div className='mt-8'>{/* cards go here */}</div>
 
           <div>
-            <div>Load more</div>
+            <div className='bg-secondary-100 text-secondary-200'>Load more</div>
           </div>
         </div>
       </main>
