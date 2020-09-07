@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Input } from '../components';
 
 export const Signup = () => {
   return (
@@ -11,41 +12,19 @@ export const Signup = () => {
             </h2>
           </div>
           <div className='mb-4'>
-            <input
-              type='text'
-              id='firstName'
-              placeholder='First Name'
-              className='shadow appearance-none border rounded w-full py-2 px-3'
-            />
+            <Input id='firstName' type='text' placeholder='First Name' />
           </div>
           <div className='mb-4'>
-            <input
-              type='text'
-              id='lastName'
-              placeholder='Last Name'
-              className='shadow appearance-none border rounded w-full py-2 px-3'
-            />
+            <Input id='lastName' type='text' placeholder='Last Name' />
           </div>
           <div className='mb-4'>
-            <input
-              type='text'
-              id='email'
-              placeholder='Email'
-              className='shadow appearance-none border rounded w-full py-2 px-3'
-            />
+            <Input id='email' type='email' placeholder='Email' />
           </div>
           <div className='mb-4'>
-            <input
-              type='password'
-              id='password'
-              placeholder='Password'
-              className='shadow appearance-none border rounded w-full py-2 px-3'
-            />
+            <Input id='password' type='password' placeholder='Password' />
           </div>
           <div className='mb-4'>
-            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
-              Signup
-            </button>
+            <Button>Signup</Button>
           </div>
         </form>
       </div>

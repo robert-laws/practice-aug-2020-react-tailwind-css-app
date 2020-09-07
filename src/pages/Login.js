@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Input } from '../components';
 
 export const Login = () => {
   return (
@@ -11,25 +12,13 @@ export const Login = () => {
             </h2>
           </div>
           <div className='mb-4'>
-            <input
-              className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight placeholder-gray-400 focus:outline-none focus:shadow-outline'
-              id='email'
-              type='text'
-              placeholder='Email'
-            />
+            <Input id='email' type='email' placeholder='Email' />
           </div>
           <div className='mb-4'>
-            <input
-              className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight placeholder-gray-400 focus:outline-none focus:shadow-outline'
-              id='password'
-              type='text'
-              placeholder='Password'
-            />
+            <Input id='password' type='password' placeholder='Password' />
           </div>
           <div className='mb-4'>
-            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
-              Login
-            </button>
+            <Button>Login</Button>
           </div>
         </form>
       </div>
