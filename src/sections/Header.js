@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../images/checkmark-outline.svg';
 
 export const Header = () => {
@@ -14,12 +15,12 @@ export const Header = () => {
         />
       </div>
       <div className='flex flex-col sm:flex-row flex-1 justify-center sm:justify-end items-center'>
-        <a
-          href='/'
+        <Link
+          to='/'
           className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
         >
           Home
-        </a>
+        </Link>
         <a
           href='/'
           className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
@@ -44,6 +45,18 @@ export const Header = () => {
         >
           About
         </a>
+        <Link
+          to='/login'
+          className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
+        >
+          Login
+        </Link>
+        <Link
+          to='/signup'
+          className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
+        >
+          Signup
+        </Link>
       </div>
     </header>
   );
