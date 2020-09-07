@@ -24,19 +24,25 @@ export const Header = () => {
           href='/'
           className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
         >
-          Your To Do Lists
+          To Do Lists
         </a>
         <a
           href='/'
           className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
         >
-          Our Mission
+          Profile
         </a>
         <a
           href='/'
           className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
         >
-          About Us
+          Keywords
+        </a>
+        <a
+          href='/'
+          className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
+        >
+          About
         </a>
       </div>
     </header>

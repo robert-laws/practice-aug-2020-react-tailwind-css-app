@@ -11,13 +11,16 @@ export const Footer = () => {
             Home
           </a>
           <a href='/' className='hover:text-green-300 text-gray-400'>
-            Your To Do Lists
+            To Do Lists
           </a>
           <a href='/' className='hover:text-green-300 text-gray-400'>
-            Our Mission
+            Profile
           </a>
           <a href='/' className='hover:text-green-300 text-gray-400'>
-            About Us
+            Keywords
+          </a>
+          <a href='/' className='hover:text-green-300 text-gray-400'>
+            About
           </a>
         </div>
         <div className='flex flex-col items-center my-3 md:w-64'>
