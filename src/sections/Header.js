@@ -4,17 +4,17 @@ import { ReactComponent as Logo } from '../images/checkmark-outline.svg';
 
 export const Header = () => {
   return (
-    <header className='w-full bg-green-800 flex-initial flex flex-col sm:flex-row items-center p-3'>
-      <div className='flex flex-col flex-1 sm:flex-initial justify-center items-center w-20 h-auto my-3'>
+    <header className='w-full bg-green-800 flex-initial flex flex-col md:flex-row items-center p-3'>
+      <div className='flex flex-col flex-1 md:flex-initial justify-center items-center w-20 h-auto my-3 ml-3'>
         <Logo
-          className='h-10 w-10'
+          className='h-14 w-14'
           style={{
             fill: '#9ae6b4',
             filter: 'drop-shadow( 2px 2px 2px rgba(0, 0, 0, .7))',
           }}
         />
       </div>
-      <div className='flex flex-col sm:flex-row flex-1 justify-center sm:justify-end items-center'>
+      <div className='flex flex-col md:flex-row flex-1 justify-center md:justify-end items-center'>
         <Link
           to='/'
           className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
