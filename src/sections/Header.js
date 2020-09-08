@@ -7,7 +7,7 @@ export const Header = () => {
     <header className='w-full bg-green-800 flex-initial flex flex-col md:flex-row items-center p-3'>
       <div className='flex flex-col flex-1 md:flex-initial justify-center items-center w-20 h-auto my-3 ml-3'>
         <Logo
-          className='h-14 w-14'
+          className='h-12 w-12'
           style={{
             fill: '#9ae6b4',
             filter: 'drop-shadow( 2px 2px 2px rgba(0, 0, 0, .7))',
