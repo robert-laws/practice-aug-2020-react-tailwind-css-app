@@ -1,6 +1,6 @@
 import React from 'react';
 import { Main } from '../sections';
 
-export const Home = () => {
-  return <Main>Home</Main>;
+export const About = () => {
+  return <Main>About</Main>;
 };

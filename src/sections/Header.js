@@ -22,25 +22,25 @@ export const Header = () => {
           Home
         </Link>
         <a
-          href='/'
+          href='/lists'
           className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
         >
           To Do Lists
         </a>
         <a
-          href='/'
+          href='/profile'
           className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
         >
           Profile
         </a>
         <a
-          href='/'
+          href='/keywords'
           className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
         >
           Keywords
         </a>
         <a
-          href='/'
+          href='/about'
           className='mx-4 my-1 font-bold text-lg hover:text-green-300 text-white'
         >
           About
