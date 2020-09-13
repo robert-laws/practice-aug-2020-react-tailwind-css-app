@@ -1,7 +1,5 @@
 import React from 'react';
 import hero from '../images/checkmark-hero.jpg';
-// import { ReactComponent as Bubbles } from '../images/bubbles.svg';
-import bubbles from '../images/bubbles.svg';
 
 export const Home = () => {
   return (
