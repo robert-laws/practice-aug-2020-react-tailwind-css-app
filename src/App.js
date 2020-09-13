@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Header, Footer, Main } from './sections';
-import { Home, Login, Signup } from './pages';
+import { Home, Login, Signup, Lists, Profile, Keywords, About } from './pages';
 
 function App() {
   return (
@@ -12,6 +12,18 @@ function App() {
           <Switch>
             <Route exact path='/'>
               <Home />
+            </Route>
+            <Route path='/lists'>
+              <Lists />
+            </Route>
+            <Route path='/profile'>
+              <Profile />
+            </Route>
+            <Route path='/keywords'>
+              <Keywords />
+            </Route>
+            <Route path='/about'>
+              <About />
             </Route>
             <Route exact path='/login'>
               <Login />
